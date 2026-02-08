@@ -15,16 +15,16 @@ export async function updateCommand(options: { ai?: string }): Promise<void> {
 
     // Detect AI assistant
     const assistant = detectAIAssistant(options.ai);
-    const targetPath = join(assistant.skillsPath, 'notebooklm-skills');
+    const targetPath = join(assistant.skillsPath, 'learning-with-decks-skill');
 
     // Check if installed
     if (!existsSync(targetPath)) {
-      Logger.error('NotebookLM Skills is not installed.');
-      Logger.info('Run: nlm-cli init --ai <name>');
+      Logger.error('Learning with Decks is not installed.');
+      Logger.info('Run: lwd-cli init --ai <name>');
       process.exit(1);
     }
 
-    Logger.info('Updating NotebookLM Skills...');
+    Logger.info('Updating Learning with Decks...');
 
     // Get assets path
     const assetsPath = join(dirname(dirname(__dirname)), 'assets');

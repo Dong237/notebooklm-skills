@@ -19,19 +19,19 @@ const packagePath = join(dirname(__dirname), 'package.json');
 const packageJson = JSON.parse(readFileSync(packagePath, 'utf-8'));
 
 program
-  .name('nlm-cli')
-  .description('CLI installer for NotebookLM Skills - transform files into learning materials')
+  .name('lwd-cli')
+  .description('CLI installer for Learning with Decks - transform files into learning materials')
   .version(packageJson.version);
 
 program
   .command('init')
-  .description('Install NotebookLM Skills to your AI assistant')
+  .description('Install Learning with Decks to your AI assistant')
   .option('--ai <name>', 'Specify AI assistant: claude, cursor, windsurf, or continue')
   .action(initCommand);
 
 program
   .command('update')
-  .description('Update NotebookLM Skills to the latest version')
+  .description('Update Learning with Decks to the latest version')
   .option('--ai <name>', 'Specify AI assistant: claude, cursor, windsurf, or continue')
   .action(updateCommand);
 

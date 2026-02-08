@@ -17,7 +17,7 @@ export async function versionsCommand(): Promise<void> {
     const cliVersion = packageJson.version;
 
     Logger.log('');
-    Logger.log('NotebookLM Skills - Version Information');
+    Logger.log('Learning with Decks - Version Information');
     Logger.log('━'.repeat(50));
     Logger.log(`CLI Version:    ${cliVersion}`);
     Logger.log(`Package Name:   ${packageJson.name}`);
@@ -26,8 +26,8 @@ export async function versionsCommand(): Promise<void> {
     Logger.log('━'.repeat(50));
     Logger.log('');
 
-    Logger.info('For updates, run: nlm-cli update');
-    Logger.info('For issues: https://github.com/Dong237/notebooklm-skills/issues');
+    Logger.info('For updates, run: lwd-cli update');
+    Logger.info('For issues: https://github.com/Dong237/learning-with-decks-skill/issues');
     Logger.log('');
 
   } catch (error) {

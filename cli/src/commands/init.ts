@@ -39,13 +39,13 @@ export async function initCommand(options: { ai?: string }): Promise<void> {
     }
 
     // Target installation path
-    const targetPath = join(assistant.skillsPath, 'notebooklm-skills');
+    const targetPath = join(assistant.skillsPath, 'learning-with-decks-skill');
 
     // Check if already installed
     if (existsSync(targetPath)) {
-      Logger.warn('NotebookLM Skills is already installed at:');
+      Logger.warn('Learning with Decks is already installed at:');
       Logger.log(`  ${targetPath}`);
-      Logger.info('To update, run: nlm-cli update');
+      Logger.info('To update, run: lwd-cli update');
       return;
     }
 

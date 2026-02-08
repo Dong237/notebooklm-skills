@@ -1,5 +1,5 @@
 ---
-name: notebooklm-skills
+name: learning-with-decks-skill
 description: "Transform files and folders into learning materials using NotebookLM. Actions: transform, convert, generate, create from files. Outputs: audio podcast, video explainer, slide deck, study guide, quiz, flashcards, infographic, mind map, briefing doc, report. Sources: PDF, text files, URLs, folders, subfolders. Features: batch processing, watermark removal, progress tracking, configurable granularity."
 ---
 

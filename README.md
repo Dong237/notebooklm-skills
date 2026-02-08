@@ -1,22 +1,22 @@
-# NotebookLM Skills
+# Learning with Decks
 
 <p align="center">
-  <a href="https://github.com/Dong237/notebooklm-skills/releases"><img src="https://img.shields.io/github/v/release/Dong237/notebooklm-skills?style=for-the-badge&color=blue" alt="GitHub Release"></a>
+  <a href="https://github.com/Dong237/learning-with-decks-skill/releases"><img src="https://img.shields.io/github/v/release/Dong237/learning-with-decks-skill?style=for-the-badge&color=blue" alt="GitHub Release"></a>
   <img src="https://img.shields.io/badge/node.js-16+-green?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 16+">
-  <a href="https://github.com/Dong237/notebooklm-skills/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Dong237/notebooklm-skills?style=for-the-badge&color=green" alt="License"></a>
+  <a href="https://github.com/Dong237/learning-with-decks-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Dong237/learning-with-decks-skill?style=for-the-badge&color=green" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/notebooklm-cli"><img src="https://img.shields.io/npm/v/notebooklm-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
-  <a href="https://www.npmjs.com/package/notebooklm-cli"><img src="https://img.shields.io/npm/dm/notebooklm-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
-  <a href="https://github.com/Dong237/notebooklm-skills/stargazers"><img src="https://img.shields.io/github/stars/Dong237/notebooklm-skills?style=flat-square&logo=github" alt="GitHub stars"></a>
+  <a href="https://www.npmjs.com/package/lwd-cli"><img src="https://img.shields.io/npm/v/lwd-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/lwd-cli"><img src="https://img.shields.io/npm/dm/lwd-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
+  <a href="https://github.com/Dong237/learning-with-decks-skill/stargazers"><img src="https://img.shields.io/github/stars/Dong237/learning-with-decks-skill?style=flat-square&logo=github" alt="GitHub stars"></a>
 </p>
 
 Transform your files and folders into rich learning materials—audio podcasts, video explainers, slide decks, quizzes, flashcards, and more—using Google's NotebookLM, all through your AI coding assistant.
 
-## What is NotebookLM Skills?
+## What is Learning with Decks?
 
-**NotebookLM Skills** is an AI coding assistant skill that automates the creation of learning materials from your documents. Point it at your PDFs, Markdown files, or folders, and it generates:
+**Learning with Decks** is an AI coding assistant skill that automates the creation of learning materials from your documents. Point it at your PDFs, Markdown files, or folders, and it generates:
 
 - 🎙️ **Audio Podcasts** (Deep Dive, Brief, Critique, Debate)
 - 🎬 **Video Explainers** with 9 visual styles
@@ -110,13 +110,13 @@ The easiest way to install across any platform:
 
 ```bash
 # Install the CLI globally
-npm install -g notebooklm-cli
+npm install -g lwd-cli
 
 # Install skill to your AI assistant
-nlm-cli init --ai claude      # For Claude Code
-# nlm-cli init --ai cursor    # For Cursor
-# nlm-cli init --ai windsurf  # For Windsurf
-# nlm-cli init --ai continue  # For Continue
+lwd-cli init --ai claude      # For Claude Code
+# lwd-cli init --ai cursor    # For Cursor
+# lwd-cli init --ai windsurf  # For Windsurf
+# lwd-cli init --ai continue  # For Continue
 ```
 
 The CLI will:
@@ -130,8 +130,8 @@ The CLI will:
 For Claude Code or Windsurf users:
 
 ```
-/plugin marketplace add Dong237/notebooklm-skills
-/plugin install notebooklm-skills@notebooklm-skills
+/plugin marketplace add Dong237/learning-with-decks-skill
+/plugin install learning-with-decks-skill@learning-with-decks-skill
 ```
 
 Then restart your AI assistant.
@@ -140,28 +140,28 @@ Then restart your AI assistant.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Dong237/notebooklm-skills.git
-   cd notebooklm-skills
+   git clone https://github.com/Dong237/learning-with-decks-skill.git
+   cd learning-with-decks-skill
    ```
 
 2. Copy to your AI assistant's skills directory:
    ```bash
    # For Claude Code:
-   cp -r src/notebooklm-skills ~/.claude/skills/
+   cp -r src/learning-with-decks-skill ~/.claude/skills/
 
    # For Cursor:
-   # cp -r src/notebooklm-skills ~/.cursor/skills/
+   # cp -r src/learning-with-decks-skill ~/.cursor/skills/
 
    # For Windsurf:
-   # cp -r src/notebooklm-skills ~/.windsurf/skills/
+   # cp -r src/learning-with-decks-skill ~/.windsurf/skills/
 
    # For Continue:
-   # cp -r src/notebooklm-skills ~/.continue/skills/
+   # cp -r src/learning-with-decks-skill ~/.continue/skills/
    ```
 
 3. Install Node.js dependencies for watermark removal:
    ```bash
-   cd ~/.claude/skills/notebooklm-skills/scripts
+   cd ~/.claude/skills/learning-with-decks-skill/scripts
    npm install
    ```
 
@@ -174,7 +174,7 @@ Once installed, activate the skill through natural conversation with your AI ass
 ```
 You: "Transform my lecture PDFs in /docs/lectures into slide decks"
 
-AI: [Activates notebooklm-skills]
+AI: [Activates learning-with-decks-skill]
     Let me guide you through the configuration...
 
     Step 1/8: I'll analyze /docs/lectures
@@ -320,10 +320,10 @@ You can also clean PDFs manually:
 
 ```bash
 # Single file
-node ~/.claude/skills/notebooklm-skills/scripts/clean-watermark.js input.pdf output.pdf
+node ~/.claude/skills/learning-with-decks-skill/scripts/clean-watermark.js input.pdf output.pdf
 
 # Batch processing
-node ~/.claude/skills/notebooklm-skills/scripts/clean-watermark.js --batch /path/to/directory
+node ~/.claude/skills/learning-with-decks-skill/scripts/clean-watermark.js --batch /path/to/directory
 ```
 
 ## Development
@@ -331,12 +331,12 @@ node ~/.claude/skills/notebooklm-skills/scripts/clean-watermark.js --batch /path
 ### File Structure
 
 ```
-notebooklm-skills/
+learning-with-decks-skill/
 ├── .claude-plugin/          # Plugin metadata
 │   ├── plugin.json          # Plugin registration
 │   └── marketplace.json     # Marketplace metadata
 ├── src/                     # Source of truth
-│   └── notebooklm-skills/
+│   └── learning-with-decks-skill/
 │       ├── SKILL.md         # Main skill definition
 │       ├── phases/          # 3-phase workflow
 │       │   ├── 01-configure.md
@@ -348,9 +348,9 @@ notebooklm-skills/
 │           └── package-lock.json
 ├── .claude/                 # Local development
 │   └── skills/
-│       └── notebooklm-skills/  (copy of src/)
+│       └── learning-with-decks-skill/  (copy of src/)
 ├── .shared/                 # Reference copy
-│   └── notebooklm-skills/  (copy of src/)
+│   └── learning-with-decks-skill/  (copy of src/)
 ├── cli/                     # NPM CLI installer
 │   ├── src/                 # TypeScript source
 │   ├── assets/              # Bundled skill files
@@ -371,7 +371,7 @@ notebooklm-skills/
 
 Contributions are welcome! Please follow these guidelines:
 
-1. Make changes in `src/notebooklm-skills/`
+1. Make changes in `src/learning-with-decks-skill/`
 2. Test locally by syncing to `.claude/skills/`
 3. Ensure the 3-phase workflow still works end-to-end
 4. Update README.md if adding features
@@ -416,7 +416,7 @@ A: Yes! The CLI installer supports 14+ platforms including Cursor, Windsurf, Con
 **Solution:**
 ```bash
 # Verify installation
-ls ~/.claude/skills/notebooklm-skills/
+ls ~/.claude/skills/learning-with-decks-skill/
 # Should show: SKILL.md, phases/, scripts/
 
 # Check skill is recognized
@@ -431,7 +431,7 @@ ls ~/.claude/skills/notebooklm-skills/
 node --version  # Must be 16+
 
 # Reinstall dependencies
-cd ~/.claude/skills/notebooklm-skills/scripts
+cd ~/.claude/skills/learning-with-decks-skill/scripts
 rm -rf node_modules
 npm install
 ```
@@ -465,8 +465,8 @@ Copyright (c) 2025 Dong237
 
 ## Support
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Dong237/notebooklm-skills/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/Dong237/notebooklm-skills/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Dong237/learning-with-decks-skill/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/Dong237/learning-with-decks-skill/discussions)
 - 📧 **Email**: youxiang.dong@outlook.com
 
 ## Acknowledgments

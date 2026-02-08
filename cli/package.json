@@ -1,11 +1,11 @@
 {
-  "name": "notebooklm-cli",
-  "version": "1.0.1",
-  "description": "CLI installer for NotebookLM Skills - transform files into learning materials",
+  "name": "lwd-cli",
+  "version": "1.1.0",
+  "description": "CLI installer for Learning with Decks - transform files into learning materials",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "nlm-cli": "./dist/index.js"
+    "lwd-cli": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -34,12 +34,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dong237/notebooklm-skills.git"
+    "url": "https://github.com/Dong237/learning-with-decks-skill.git"
   },
   "bugs": {
-    "url": "https://github.com/Dong237/notebooklm-skills/issues"
+    "url": "https://github.com/Dong237/learning-with-decks-skill/issues"
   },
-  "homepage": "https://github.com/Dong237/notebooklm-skills#readme",
+  "homepage": "https://github.com/Dong237/learning-with-decks-skill#readme",
   "devDependencies": {
     "@types/node": "^20.11.0",
     "typescript": "^5.3.0"
