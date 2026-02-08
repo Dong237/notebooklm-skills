@@ -1,6 +1,6 @@
 {
   "name": "notebooklm-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI installer for NotebookLM Skills - transform files into learning materials",
   "type": "module",
   "main": "dist/index.js",
