@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build
+dist/
+cli/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts (user-generated state files)
+.notebook-decks-meta.json
+.notebooklm-skills-meta.json
+generation-config.jsonl
+tasks.md
+
+# Temporary files
+*.tmp
+*.log
+
+# Example skills (not part of main package)
+.example_skills/

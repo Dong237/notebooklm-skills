@@ -1,0 +1,53 @@
+{
+  "name": "notebooklm-cli",
+  "version": "1.0.0",
+  "description": "CLI installer for NotebookLM Skills - transform files into learning materials",
+  "main": "dist/index.js",
+  "bin": {
+    "nlm-cli": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "notebooklm",
+    "cli",
+    "installer",
+    "claude",
+    "cursor",
+    "windsurf",
+    "learning",
+    "podcast",
+    "slides",
+    "quiz",
+    "ai",
+    "assistant"
+  ],
+  "author": "Dong237 <youxiang.dong@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dong237/notebooklm-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dong237/notebooklm-skills/issues"
+  },
+  "homepage": "https://github.com/Dong237/notebooklm-skills#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

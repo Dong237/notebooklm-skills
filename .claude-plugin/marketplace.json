@@ -1,0 +1,38 @@
+{
+  "name": "notebooklm-skills",
+  "id": "notebooklm-skills",
+  "owner": {
+    "name": "Dong237"
+  },
+  "metadata": {
+    "description": "Transform files and folders into rich learning materials (podcasts, videos, slide decks, quizzes, etc.) using NotebookLM MCP with automatic watermark removal for slide decks.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "notebooklm-skills",
+      "source": "./",
+      "description": "Professional learning material generator for AI coding assistants. Transform PDFs, text files, and folders into audio podcasts, video explainers, slide decks, quizzes, flashcards, infographics, mind maps, and study guides using NotebookLM.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Dong237"
+      },
+      "keywords": [
+        "notebooklm",
+        "learning",
+        "podcast",
+        "video",
+        "slides",
+        "quiz",
+        "flashcards",
+        "study-guide",
+        "education",
+        "ai",
+        "batch-processing",
+        "mcp"
+      ],
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}
