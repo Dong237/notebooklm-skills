@@ -2,12 +2,17 @@
 
 import { existsSync, mkdirSync, cpSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
 import { detectAIAssistant } from '../utils/detect.js';
 import { Logger } from '../utils/logger.js';
 
 export async function initCommand(options: { ai?: string }): Promise<void> {
   try {
+    // ES module equivalents of __filename and __dirname
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
+
     // Detect AI assistant
     const assistant = detectAIAssistant(options.ai);
 
@@ -25,7 +30,7 @@ export async function initCommand(options: { ai?: string }): Promise<void> {
     }
 
     // Get assets path (relative to this script's compiled location)
-    const assetsPath = join(dirname(dirname(dirname(__filename))), 'assets');
+    const assetsPath = join(dirname(dirname(__dirname)), 'assets');
 
     if (!existsSync(assetsPath)) {
       Logger.error(`Assets not found at ${assetsPath}`);
